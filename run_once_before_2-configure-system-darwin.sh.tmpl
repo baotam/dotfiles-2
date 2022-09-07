@@ -39,7 +39,7 @@ sudo spctl --master-disable
 # Dock settings
 # ---------------------------------------------------------------------------------------------------------------------
 # Set dock position
-defaults write com.apple.dock orientation -string "right"
+defaults write com.apple.dock orientation -string "left"
 # Set the icon size of Dock items in pixels
 defaults write com.apple.dock "tilesize" -int 43
 # Minimize windows into their application’s icon
@@ -52,7 +52,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.dock show-recents -bool false
 # Clear Dock of all default icons and set my own
 defaults write com.apple.dock persistent-others -array
-defaults write com.apple.dock persistent-apps -array\
+#defaults write com.apple.dock persistent-apps -array\
  '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Firefox.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'\
  '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Mail.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'\
  '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Visual Studio Code.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'\
