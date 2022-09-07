@@ -117,5 +117,3 @@ cask "spotify"
 cask "suspicious-package"
 cask "visual-studio-code"
 cask "vlc"
-mas "The Unarchiver", id: 425424353
-mas "XMind", id: 1327661892
