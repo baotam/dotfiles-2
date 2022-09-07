@@ -10,6 +10,7 @@ My dotfiles, managed by [chezmoi](https://github.com/twpayne/chezmoi).
 
    ```sh
    xcode-select --install
+   softwareupdate --install-rosetta --agree-to-license
    ```
 
 2. Insert Smart Card (Yubikey, Ledger, etc.)
