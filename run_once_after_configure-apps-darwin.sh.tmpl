@@ -4,9 +4,9 @@
 # ---------------------------------------------------------------------------------------------------------------------
 # Amphetamine settings
 # ---------------------------------------------------------------------------------------------------------------------
-killall Amphetamine
+#killall Amphetamine
 # Start session as soon as Amphetamine starts
-defaults write com.if.Amphetamine "Start Session At Launch" -bool true
+#defaults write com.if.Amphetamine "Start Session At Launch" -bool true
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Docker settings
@@ -36,9 +36,9 @@ brew autoupdate delete && brew autoupdate start 604800 --upgrade
 # ---------------------------------------------------------------------------------------------------------------------
 # Mail settings
 # ---------------------------------------------------------------------------------------------------------------------
-killall Mail
+#killall Mail
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+#defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Moom settings
@@ -54,8 +54,8 @@ open -a Moom
 # OneDrive settings
 # ---------------------------------------------------------------------------------------------------------------------
 # iPhone backups are located in OneDrive
-mkdir -p ~/Library/Application\ Support/MobileSync
-ln -s ~/Library/CloudStorage/OneDrive-Personal/iPhone\ backup ~/Library/Application\ Support/MobileSync/Backup
+#mkdir -p ~/Library/Application\ Support/MobileSync
+#ln -s ~/Library/CloudStorage/OneDrive-Personal/iPhone\ backup ~/Library/Application\ Support/MobileSync/Backup
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Safari settings
