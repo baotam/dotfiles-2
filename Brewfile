@@ -102,7 +102,6 @@ cask "licecap"
 cask "logitech-options"
 cask "macfuse"
 cask "moom"
-cask "nx-studio"
 cask "postman"
 cask "qbittorrent"
 cask "qlcolorcode"
@@ -118,13 +117,5 @@ cask "spotify"
 cask "suspicious-package"
 cask "visual-studio-code"
 cask "vlc"
-mas "Amphetamine", id: 937984704
-mas "Bitwarden", id: 1352778147
-mas "iMovie", id: 408981434
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
-mas "OneDrive", id: 823766827
-mas "StopTheMadness", id: 1376402589
 mas "The Unarchiver", id: 425424353
 mas "XMind", id: 1327661892
