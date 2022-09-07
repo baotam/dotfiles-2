@@ -72,16 +72,16 @@ alias zshrc="chezmoi edit ~/.zshrc --apply"
 
 fpath=( ~/.zfuncs "${fpath[@]}" )
 freload() { while (( $# )); do; unfunction $1; autoload -U $1; shift; done }
-autoload -Uz helm
-autoload -Uz kc
-autoload -Uz ks
+#autoload -Uz helm
+#autoload -Uz kc
+#autoload -Uz ks
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Android Studio
 # ---------------------------------------------------------------------------------------------------------------------
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin; PATH=$PATH:$ANDROID_HOME/emulator; PATH=$PATH:$ANDROID_HOME/platform-tools
+#export ANDROID_HOME="$HOME/Library/Android/sdk"
+#export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+#export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin; PATH=$PATH:$ANDROID_HOME/emulator; PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Bat
@@ -102,7 +102,7 @@ export DIRENV_LOG_FORMAT=""
 # ---------------------------------------------------------------------------------------------------------------------
 # Flux
 # ---------------------------------------------------------------------------------------------------------------------
-command -v flux >/dev/null && . <(flux completion zsh)
+#command -v flux >/dev/null && . <(flux completion zsh)
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Go
@@ -113,8 +113,8 @@ export PATH=$PATH:$GOPATH/bin
 # ---------------------------------------------------------------------------------------------------------------------
 # Google Cloud SDK
 # ---------------------------------------------------------------------------------------------------------------------
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+#source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+#source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Homebrew
@@ -144,7 +144,7 @@ eval "$(starship init zsh)"
 # Terraform
 # ---------------------------------------------------------------------------------------------------------------------
 # https://github.com/hashicorp/terraform/issues/21271#issuecomment-491424517
-unsetopt nomatch
+#unsetopt nomatch
 
 # ---------------------------------------------------------------------------------------------------------------------
 # TheFuck
@@ -163,4 +163,3 @@ volta-migrate --no-create 1>/dev/null
 # ---------------------------------------------------------------------------------------------------------------------
 # Other stuff (may be legacy)
 # ---------------------------------------------------------------------------------------------------------------------
-export CURRENT_AWS="echo \"\${AWS_PROFILE:-default}(\${AWS_DEFAULT_REGION:-\${AWS_REGION:-\$(cat ~/.aws/config | sed -n -E \"/\\\[((profile \$AWS_PROFILE)|\${AWS_PROFILE:-default})\\\]/,/\\[/p;/\\\[/d\" | grep region | cut -f2- -d=)}})\""
