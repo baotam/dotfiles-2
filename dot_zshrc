@@ -70,7 +70,7 @@ alias rm="trash"
 alias serve="http-server -o"
 alias uncommit="git reset --soft HEAD^"
 alias zshrc="chezmoi edit ~/.zshrc --apply"
-
+alias atm=appf-webtools-mgr
 fpath=( ~/.zfuncs "${fpath[@]}" )
 freload() { while (( $# )); do; unfunction $1; autoload -U $1; shift; done }
 #autoload -Uz helm
