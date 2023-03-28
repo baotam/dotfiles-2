@@ -30,6 +30,7 @@ plugins=(
   aliases     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases
   aws         # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aws
   direnv      # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/direnv
+  fasd
   encode64    # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/encode64
   gitignore   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
   golang      # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/golang
@@ -47,7 +48,7 @@ plugins=(
   thefuck     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck
   vscode      # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vscode
   yarn        # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn
-  z           # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z
+  #z           # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z
   zsh-syntax-highlighting
 )
 
