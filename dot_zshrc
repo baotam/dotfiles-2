@@ -64,7 +64,7 @@ alias gitdaemon="gitserve"
 alias gitserve="git daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose"
 alias kind-reset="kreset"
 alias kreset="kind delete cluster && curl -fsSL https://raw.githubusercontent.com/tilt-dev/kind-local/master/kind-with-registry.sh | bash"
-alias ls="exa -all --header --git --group-directories-first --group --oneline"
+alias ls="eza -all --header --git --group-directories-first --group --oneline"
 alias pr="gh pr create --fill; gh pr edit --add-label automerge; gh pr view --web"
 alias rebase="current=\$(git branch --show-current); git stash; git switch main; git pull; git switch $current; git rebase; git unstash"
 alias rm="trash"
@@ -72,6 +72,8 @@ alias serve="http-server -o"
 alias uncommit="git reset --soft HEAD^"
 alias zshrc="chezmoi edit ~/.zshrc --apply"
 alias atm=appf-webtools-mgr
+alias z='fasd_cd -d'     # cd, same functionality as j in autojump
+alias zz='fasd_cd -d -i' # cd with interactive selection
 fpath=( ~/.zfuncs "${fpath[@]}" )
 freload() { while (( $# )); do; unfunction $1; autoload -U $1; shift; done }
 #autoload -Uz helm
@@ -165,3 +167,6 @@ volta-migrate --no-create 1>/dev/null
 # ---------------------------------------------------------------------------------------------------------------------
 # Other stuff (may be legacy)
 # ---------------------------------------------------------------------------------------------------------------------
+export PATH="$PATH:$HOME/bin"
+export NODE_EXTRA_CA_CERTS=~/.ssh/caadmin.netskope.com.pem
+
